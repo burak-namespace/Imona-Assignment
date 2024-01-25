@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    transition: .3s;
+}
+
+:root{
+    --theme-color : #ED1E6E;
+    --font-color : rgba(0, 0, 0, 0.7);
+}
+
+body{
+    background-color: #FFFFFF;
+    /* margin-right: 10%;
+    margin-left: 10%; */
+    font-family: 'Lato', sans-serif;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+}
+#navbar a:hover{
+    color: var(--theme-color);
+    transition: 0.2s;
+}
+
+#navbar{
+    padding-top: 20px;
+    padding-bottom:20px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    /* border: 2px solid black; */
+    margin:10px;
+    width: 45%;
+    height: 120px;
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+#content-head{
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+#content1-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.page-link{
+    font-family: 'Lato',sans-serif;
+    color: var(--font-color) !important;
+}
+.page-link:hover{
+    color: var(--theme-color) !important;
+}
+#pagination-nav{
+    margin-top: 3em;
+}
+
+
+
+footer{
+    margin: 20px;
+    text-align: center
+}
+article{
+    overflow: hidden;
+}
+article img{
+    z-index: -4;
+    border-radius: 60px;
+    padding: 1em;
+}
+.article-body{
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    
+}
+.active{
+    background-color: var(--theme-color) !important;
+}
+.active:hover{
+    color: var(--font-color) !important;
+}
+
+.article-body h2{
+    cursor:pointer;
+}
+.article-body h2:hover{
+    color: var(--theme-color);
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile-head img{
+    margin-bottom: 1em;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 560px){
+    #content1-body{
+        flex-direction: column;
+
+    }   
+    article{
+        width: 100%;
+    }
+}
